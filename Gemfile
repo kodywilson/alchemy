@@ -1,5 +1,6 @@
-source 'https://rubygems.org'
-
+source 'http://rubygems.nordstrom.net'
+#source 'https://rubygems.org'
+# commented out only for work where our proxy causes problems
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.1'
