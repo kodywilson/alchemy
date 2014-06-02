@@ -1,0 +1,34 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @reagent.name %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @reagent.picture %>
+</p>
+
+<p>
+  <strong>Trait 1:</strong>
+  <%= @reagent.trait_1 %>
+</p>
+
+<p>
+  <strong>Trait 2:</strong>
+  <%= @reagent.trait_2 %>
+</p>
+
+<p>
+  <strong>Trait 3:</strong>
+  <%= @reagent.trait_3 %>
+</p>
+
+<p>
+  <strong>Trait 4:</strong>
+  <%= @reagent.trait_4 %>
+</p>
+
+<%= link_to 'Edit', edit_reagent_path(@reagent) %> |
+<%= link_to 'Back', reagents_path %>
