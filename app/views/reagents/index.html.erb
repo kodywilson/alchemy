@@ -17,7 +17,7 @@
     <% @reagents.each do |reagent| %>
       <tr>
         <td><%= reagent.name %></td>
-        <td><%= reagent.picture %></td>
+        <td><%= image_tag(reagent.picture_url, :width => 200) if reagent.picture.present? %></td>
         <td><%= reagent.trait_1 %></td>
         <td><%= reagent.trait_2 %></td>
         <td><%= reagent.trait_3 %></td>

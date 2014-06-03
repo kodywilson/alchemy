@@ -7,7 +7,7 @@
 
 <p>
   <strong>Picture:</strong>
-  <%= @reagent.picture %>
+  <%= image_tag(@reagent.picture_url, :width => 200) if @reagent.picture.present? %>
 </p>
 
 <p>
