@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20140602182316) do
+ActiveRecord::Schema.define(version: 20140603010819) do
 
   create_table "reagents", force: true do |t|
     t.string   "name"
@@ -20,6 +20,14 @@ ActiveRecord::Schema.define(version: 20140602182316) do
     t.string   "trait_2"
     t.string   "trait_3"
     t.string   "trait_4"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "solvents", force: true do |t|
+    t.string   "name"
+    t.string   "picture"
+    t.string   "level"
     t.datetime "created_at"
     t.datetime "updated_at"
   end

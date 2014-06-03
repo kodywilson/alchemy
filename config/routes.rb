@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :solvents
+
+  get 'pages/info'
+
   resources :reagents
   root :to => redirect('/reagents')
 

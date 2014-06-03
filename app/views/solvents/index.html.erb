@@ -1,0 +1,29 @@
+<h1>Listing solvents</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Picture</th>
+      <th>Level</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @solvents.each do |solvent| %>
+      <tr>
+        <td><%= solvent.name %></td>
+        <td><%= solvent.picture %></td>
+        <td><%= solvent.level %></td>
+        <td><%= link_to 'Show', solvent %></td>
+        <td><%= link_to 'Edit', edit_solvent_path(solvent) %></td>
+        <td><%= link_to 'Destroy', solvent, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Solvent', new_solvent_path %>

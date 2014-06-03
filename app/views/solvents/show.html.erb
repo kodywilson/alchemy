@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Name:</strong>
+  <%= @solvent.name %>
+</p>
+
+<p>
+  <strong>Picture:</strong>
+  <%= @solvent.picture %>
+</p>
+
+<p>
+  <strong>Level:</strong>
+  <%= @solvent.level %>
+</p>
+
+<%= link_to 'Edit', edit_solvent_path(@solvent) %> |
+<%= link_to 'Back', solvents_path %>
