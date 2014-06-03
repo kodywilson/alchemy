@@ -14,7 +14,7 @@
     <% @solvents.each do |solvent| %>
       <tr>
         <td><%= solvent.name %></td>
-        <td><%= solvent.picture %></td>
+        <td><%= image_tag(solvent.picture_url, :width => 200) if solvent.picture.present? %></td>
         <td><%= solvent.level %></td>
         <td><%= link_to 'Show', solvent %></td>
         <td><%= link_to 'Edit', edit_solvent_path(solvent) %></td>
